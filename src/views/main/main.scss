@@ -23,5 +23,9 @@
   &__body {
     display: flex;
     justify-content: center;
+
+    border: 1px solid $secondary-border-color;
+    border-radius: $border-radius * 2;
+    overflow: hidden;
   }
 }
