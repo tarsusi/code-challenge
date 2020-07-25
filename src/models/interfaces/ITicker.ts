@@ -1,5 +1,7 @@
 export interface ITicker {
   baseVolume: string;
   lowPrice: string;
-  highestPrice: string;
+  highPrice: string;
+  lastPrice: string;
+  percentChange?: string;
 }

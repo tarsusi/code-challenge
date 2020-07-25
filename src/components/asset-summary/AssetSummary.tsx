@@ -15,7 +15,7 @@ const AssetSummary: React.FC<AssetSummaryProps> = ({ asset: { id, name, symbol, 
   const history = useHistory();
 
   return (
-    <div className="asset-summary-container" key={id} onClick={() => history.push(`/coin-pairs/${id}`)}>
+    <div className="asset-summary-container" key={id} onClick={() => history.push(`/markets/${name}`)}>
       <div className="name" title={name}>
         {name}
       </div>

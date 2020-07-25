@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Main from '../views/main/Main';
 import NotFound from '../views/not-found/NotFound';
-import CoinPairs from '../views/coin-pairs/CoinPairs';
+import Markets from '../views/markets/Markets';
 
 import Header from '../components/header/Header';
 
@@ -16,8 +16,8 @@ const Routes: React.FC = () => {
           <Route exact path="/">
             <Main />
           </Route>
-          <Route exact path="/coin-pairs/:id">
-            <CoinPairs />
+          <Route exact path="/markets/:name">
+            <Markets />
           </Route>
           <Route path="*">
             <NotFound />
