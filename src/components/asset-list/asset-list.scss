@@ -1,0 +1,51 @@
+@import 'src/styles/_index.scss';
+
+.asset-list-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .header {
+    display: flex;
+    height: $header-height;
+    background-color: $primary-bg-color;
+    color: $primary-color;
+    align-items: center;
+
+    .name,
+    .pair,
+    .symbol,
+    .market-cap,
+    .average-last-price {
+      font-weight: bold;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name,
+  .pair,
+  .symbol,
+  .market-cap,
+  .average-last-price {
+    text-align: left;
+    padding: 0 8px;
+  }
+
+  .name,
+  .pair,
+  .symbol {
+    width: 20%;
+  }
+
+  .market-cap {
+    width: 25%;
+  }
+
+  .average-last-price {
+    flex: 1;
+  }
+}
