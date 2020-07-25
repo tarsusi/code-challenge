@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 80%;
+  max-width: $breakpoint-desktop;
   margin: auto;
 
   &__header {
@@ -17,6 +18,24 @@
       font-size: $font-size-xl;
       color: $primary-color;
       font-weight: bold;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: unset;
+
+      &__title {
+        margin-bottom: $margin-md;
+      }
+
+      &__search {
+        .app-input-container {
+          .app-input {
+            min-width: 100%;
+            width: 100%;
+          }
+        }
+      }
     }
   }
 

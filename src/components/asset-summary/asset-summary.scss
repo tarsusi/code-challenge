@@ -15,4 +15,36 @@
   &:hover {
     background-color: $hover-color;
   }
+
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+    padding: $padding-sm;
+    align-items: flex-start;
+
+    .name,
+    .pair,
+    .market-cap,
+    .average-last-price {
+      display: flex;
+      margin: $margin-xs 0;
+      white-space: nowrap;
+
+      .label {
+        font-weight: bold;
+        margin-right: $margin-xs;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .label {
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
 }

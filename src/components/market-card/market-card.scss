@@ -3,11 +3,10 @@
 .market-card-container {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  height: 220px;
+  height: $box-height;
 
-  padding: 24px;
-  margin-bottom: 24px;
+  padding: $padding-lg;
+  margin-bottom: $margin-lg;
   border-radius: $border-radius * 2;
   background-color: $primary-bg-color;
 
@@ -26,6 +25,42 @@
     .analytics-container {
       flex: 1;
     }
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: $box-height-lg;
+
+    .app-divider + .market-analytics-container {
+      flex-wrap: wrap;
+
+      .analytics-container {
+        width: 50%;
+        margin-bottom: $margin-sm;
+      }
+    }
+  }
+
+  @include tablet {
+    width: $box-width-md;
+    height: $box-height-lg;
+
+    .app-divider + .market-analytics-container {
+      flex-wrap: wrap;
+
+      .analytics-container {
+        width: 50%;
+        margin-bottom: $margin-sm;
+      }
+    }
+  }
+
+  @include desktop {
+    width: $box-width-lg;
   }
 
   .warning-container {

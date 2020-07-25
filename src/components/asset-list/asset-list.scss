@@ -8,9 +8,13 @@
   .header {
     display: flex;
     height: $header-height;
-    background-color: $primary-bg-color;
-    color: $primary-color;
+    background-color: $header-color;
+    color: $tertiary-color;
     align-items: center;
+
+    @include mobile {
+      display: none;
+    }
 
     .name,
     .pair,
