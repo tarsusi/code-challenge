@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './coin-pairs.css';
+import './coin-pairs.scss';
 
 const CoinPairs: React.FC = () => {
   return <>Coin Pairs...</>;

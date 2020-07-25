@@ -1,7 +1,7 @@
 import React from 'react';
 import { gql, useQuery } from '@apollo/client';
 
-import './main.css';
+import './main.scss';
 
 const GET_MARKET = gql`
   query PageAssets {

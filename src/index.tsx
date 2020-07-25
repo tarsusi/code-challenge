@@ -6,7 +6,7 @@ import Routes from './routes';
 import { apolloClient } from './apollo';
 import * as serviceWorker from './serviceWorker';
 
-import './index.css';
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
