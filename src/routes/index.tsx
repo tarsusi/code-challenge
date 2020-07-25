@@ -16,7 +16,7 @@ const Routes: React.FC = () => {
           <Route exact path="/">
             <Main />
           </Route>
-          <Route exact path="/coin-pairs/:name">
+          <Route exact path="/coin-pairs/:id">
             <CoinPairs />
           </Route>
           <Route path="*">
