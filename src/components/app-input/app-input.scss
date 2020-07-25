@@ -1,0 +1,8 @@
+@import 'src/styles/index';
+
+.app-input {
+  min-width: 250px;
+  padding: $padding-sm;
+  border: 2px solid $primary-border-color;
+  border-radius: $border-radius;
+}
