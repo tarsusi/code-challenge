@@ -33,3 +33,28 @@ div[id='root'] {
 * {
   box-sizing: border-box;
 }
+
+
+:root {
+  --primary-color: #17181b;
+  --secondary-color: #165184;
+  --tertiary-color: #ffffff;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f5f5;
+  --primary-border-color: #f4f5f5;
+  --secondary-border-color: #165184;
+  --hover-color: #0ee3e3;
+  --header-color: #165184;
+  --success-color: #48d54e;
+  --error-color: #de0201;
+}
+
+[data-theme="dark"] {
+  --primary-color: #ffffff;
+  --secondary-color: #206a5d;
+  --tertiary-color: #17181b;
+  --primary-bg-color: #30475e;
+  --secondary-bg-color: #17181b;
+  --primary-border-color: #165184;
+  --secondary-border-color: #f4f5f5;
+}

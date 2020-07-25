@@ -1,12 +1,12 @@
-$primary-color: #17181b;
-$secondary-color: #165184;
-$tertiary-color: #ffffff;
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$tertiary-color: var(--tertiary-color);
 
-$primary-bg-color: #ffffff;
-$secondary-bg-color: #f5f5f5;
+$primary-bg-color: var(--primary-bg-color);
+$secondary-bg-color: var(--secondary-bg-color);
 
-$primary-border-color: #f4f5f5;
-$secondary-border-color: #165184;
+$primary-border-color: var(--primary-border-color);
+$secondary-border-color: var(--secondary-border-color);
 
 $hover-color: #0ee3e3;
 
