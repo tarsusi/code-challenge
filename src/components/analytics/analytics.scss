@@ -1,0 +1,37 @@
+@import 'src/styles/index';
+
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+
+  .value {
+    font-size: $font-size-xl;
+    margin-bottom: $margin-sm;
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
+  .label {
+    color: $primary-color;
+    font-size: $font-size-sm;
+  }
+
+  &.numeric {
+    .value {
+      color: $primary-color;
+      font-size: $font-size-lg;
+
+      &.increase {
+        color: $success-color;
+      }
+
+      &.decrease {
+        color: $error-color;
+      }
+    }
+
+    .label {
+      font-size: $font-size-xs;
+    }
+  }
+}

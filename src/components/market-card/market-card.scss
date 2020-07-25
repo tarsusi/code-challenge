@@ -1,0 +1,71 @@
+@import 'src/styles/index';
+
+.market-card-container {
+  display: flex;
+  flex-direction: column;
+  height: $box-height;
+
+  padding: $padding-lg;
+  margin-bottom: $margin-lg;
+  border-radius: $border-radius * 2;
+  background-color: $primary-bg-color;
+
+  .market-exchange {
+    padding-bottom: $padding-lg;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .market-analytics-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .market-exchange + .market-analytics-container {
+    .analytics-container {
+      flex: 1;
+    }
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: $box-height-lg;
+
+    .app-divider + .market-analytics-container {
+      flex-wrap: wrap;
+
+      .analytics-container {
+        width: 50%;
+        margin-bottom: $margin-sm;
+      }
+    }
+  }
+
+  @include tablet {
+    width: $box-width-md;
+    height: $box-height-lg;
+
+    .app-divider + .market-analytics-container {
+      flex-wrap: wrap;
+
+      .analytics-container {
+        width: 50%;
+        margin-bottom: $margin-sm;
+      }
+    }
+  }
+
+  @include desktop {
+    width: $box-width-lg;
+  }
+
+  .warning-container {
+    color: $secondary-color;
+    font-size: $font-size-xs;
+    margin: auto;
+  }
+}

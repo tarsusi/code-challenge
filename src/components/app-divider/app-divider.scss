@@ -1,0 +1,7 @@
+@import 'src/styles/index';
+
+.app-divider {
+  min-height: 2px;
+  background-color: $secondary-bg-color;
+  margin: $margin-md 0;
+}

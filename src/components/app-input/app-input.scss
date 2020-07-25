@@ -1,0 +1,31 @@
+@import 'src/styles/index';
+
+.app-input-container {
+  position: relative;
+
+  .app-input {
+    min-width: 250px;
+    padding: $padding-sm;
+    padding-left: $padding-xl;
+    border: 2px solid $secondary-border-color;
+    background-color: $primary-bg-color;
+    border-radius: $border-radius;
+    color: $primary-color;
+
+    &::placeholder {
+      color: $secondary-color;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    display: inline;
+
+    left: $position-sm;
+    top: $position-md;
+
+    path {
+      fill: $primary-color;
+    }
+  }
+}

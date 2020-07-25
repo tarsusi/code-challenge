@@ -1,0 +1,19 @@
+@import 'src/styles/_index.scss';
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: $header-height;
+
+  padding: 0 $padding-md;
+
+  background-color: $primary-bg-color;
+
+  &__link {
+    font-size: $font-size-lg;
+    color: $primary-color;
+    text-decoration: none;
+  }
+}

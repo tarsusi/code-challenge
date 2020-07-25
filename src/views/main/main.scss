@@ -1,0 +1,68 @@
+@import 'src/styles/index';
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: $breakpoint-desktop;
+  margin: auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: $margin-lg;
+
+    &__title {
+      font-size: $font-size-xl;
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: unset;
+
+      &__title {
+        margin-bottom: $margin-md;
+      }
+
+      &__search {
+        .app-input-container {
+          .app-input {
+            min-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid $secondary-border-color;
+    border-radius: $border-radius * 2;
+    overflow: hidden;
+  }
+
+  &__limits {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: $margin-md;
+    color: $primary-color;
+
+    .limit-value {
+      margin-left: $margin-sm;
+      color: $secondary-color;
+      cursor: pointer;
+
+      &.active {
+        color: $hover-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
