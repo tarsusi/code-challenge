@@ -1,17 +1,14 @@
 import React from 'react';
 
-import { IAsset } from '../../models/interfaces/IAsset';
+import { IAssetSummaryProps } from '../../models/interfaces/IAssetSummaryProps';
 import { currencyFormatter } from '../../utils/currencyFormatter';
 
-import './asset-summary.scss';
 import { weightedAveragePrice } from '../../utils/weightedAveragePrice';
 import { useHistory } from 'react-router-dom';
 
-interface AssetSummaryProps {
-  asset: IAsset;
-}
+import './asset-summary.scss';
 
-const AssetSummary: React.FC<AssetSummaryProps> = ({ asset: { id, name, symbol, marketCap, markets } }) => {
+const AssetSummary: React.FC<IAssetSummaryProps> = ({ asset: { id, name, symbol, marketCap, markets } }) => {
   const history = useHistory();
 
   return (
