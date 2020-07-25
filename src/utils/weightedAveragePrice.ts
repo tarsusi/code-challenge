@@ -9,7 +9,7 @@ export const weightedAveragePrice = (markets: IMarket[]) => {
   }, 0);
 
   return marketsHavingTicker.reduce((acc, { ticker }) => {
-    const averagePrice = ticker ? (parseFloat(ticker.lowPrice) + parseFloat(ticker.lowPrice)) / 2 : 0;
+    const averagePrice = ticker ? (parseFloat(ticker.lowPrice) + parseFloat(ticker.highPrice)) / 2 : 0;
 
     return acc + averagePrice * (parseFloat(ticker?.baseVolume as string) / totalBaseVolume) * 100;
   }, 0);
