@@ -1,0 +1,18 @@
+@import 'src/styles/_index.scss';
+
+.asset-summary-container {
+  display: flex;
+  height: $header-height;
+  color: $primary-color;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid $primary-border-color;
+
+  &:hover {
+    background-color: $primary-bg-color;
+  }
+
+  &:nth-child(2n) {
+    background-color: $primary-bg-color;
+  }
+}
