@@ -1,0 +1,36 @@
+@import 'src/styles/index';
+
+.market-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 220px;
+
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: $border-radius * 2;
+  background-color: $primary-bg-color;
+
+  .market-exchange {
+    padding-bottom: $padding-lg;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .market-analytics-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .market-exchange + .market-analytics-container {
+    .analytics-container {
+      flex: 1;
+    }
+  }
+
+  .warning-container {
+    color: $secondary-color;
+    font-size: $font-size-xs;
+    margin: auto;
+  }
+}
