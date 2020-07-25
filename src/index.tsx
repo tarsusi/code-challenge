@@ -1,29 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import {
-  ApolloClient,
-  HttpLink,
-  InMemoryCache,
-  ApolloProvider,
-} from "@apollo/client";
+import React from 'react';
+import { ApolloProvider } from '@apollo/client';
+import ReactDOM from 'react-dom';
 
-const client = new ApolloClient({
-  cache: new InMemoryCache(),
-  link: new HttpLink({
-    uri: "https://api.blocktap.io/graphql",
-  }),
-});
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import { apolloClient } from './apollo';
+
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client={client}>
+    <ApolloProvider client={apolloClient}>
       <App />
     </ApolloProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
