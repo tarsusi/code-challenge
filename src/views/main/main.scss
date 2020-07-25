@@ -47,4 +47,20 @@
     border-radius: $border-radius * 2;
     overflow: hidden;
   }
+
+  &__limits {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: $margin-md;
+
+    .limit-value {
+      margin-left: $margin-sm;
+      color: $secondary-color;
+      cursor: pointer;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
 }
